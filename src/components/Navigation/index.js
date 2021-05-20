@@ -4,10 +4,11 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 const navbar = () => {
     return (
         <>
-        <Navbar collapseOnSelect fixed='top' expand='sm' bg='dark' variant='dark'>
+        <Navbar collapseOnSelect sticky='top' expand='sm' bg='dark' variant='dark'>
             <Container>
                 <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-                <Navbar.Collapse id='responsive-navbar-nav'>
+                <Navbar.Brand>Grant Cawley</Navbar.Brand>
+                <Navbar.Collapse className='justify-content-end' id='responsive-navbar-nav'>
                     <Nav>
                         <Nav.Link href='/'>About</Nav.Link>
                         <Nav.Link href='/contact'>Contact</Nav.Link>
