@@ -1,20 +1,31 @@
 // import React, { useEffect, useState } from 'react'
 // import { useAppContext } from '../../utils/AppContext'
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Button, ButtonGroup, Col, Container, Image, Row } from 'react-bootstrap';
 import "./style.css"
 import PageTitle from '../../components/PageTitle'
 
 import ProfilePic from '../../Assets/ProfilePic.jpg'
+import Resume from '../../Assets/Grant Cawley - Resume.pdf'
 
 const AboutPage = () => {
     return (
         <div className="container mt-sm-5 mt-4">
 
             <PageTitle title="About Me" subtitle=""></PageTitle>
-            <Container fluid="md">
+            <Container>
                 <Row>
-                    <Col md="auto">
-                        <Image src={ProfilePic} thumbnail width={200} height={200} alt="Grant Cawley" />
+                    <Col sm={7} md={5} lg={4} >
+                        <Row>
+                            <Image src={ProfilePic} alt="Grant Cawley" />
+                        </Row>
+                        <Row>
+                            <ButtonGroup>
+                                <Button size="sm" href="https://www.linkedin.com/in/grant-cawley-89249415b" variant="danger">Linkedin</Button>
+                                <Button size="sm" href="https://github.com/cawleygl" variant="danger">GitHub</Button>
+                                <Button size="sm" href="mailto:grantlcawley@gmail.com" variant="danger">Email</Button>
+                                <Button size="sm" href={Resume} download variant="danger">Resume</Button>
+                            </ButtonGroup>
+                        </Row>
                     </Col>
                     <Col>
                         <p>Grant Cawley is a student currently learning full stack software development through Washington
@@ -27,32 +38,6 @@ const AboutPage = () => {
                     </Col>
                 </Row>
             </Container>
-
-            <div className="row mt-3">
-            </div>
-            <div className="row mt-2">
-                <div className="col-sm-10 ml-sm-4">
-                    <h4 className="font-weight-light">Linkedin: <a href="https://www.linkedin.com/in/grant-cawley-89249415b">Grant Cawley</a></h4>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-sm-10 ml-sm-4">
-                    <h4 className="font-weight-light">GitHub: <a href="https://github.com/cawleygl">cawleygl</a>
-                    </h4>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-sm-10 ml-sm-4">
-                    <h4 className="font-weight-light">Email: <a href="mailto:grantlcawley@gmail.com">grantlcawley@gmail.com</a></h4>
-                </div>
-            </div>
-            <div className="row mb-5">
-                <div className="col-sm-10 ml-sm-4">
-                    <h4 className="font-weight-light">Resume: <a href="Assets/Grant Cawley - Resume.pdf" download>Grant Cawley - Resume.pdf</a></h4>
-                </div>
-            </div>
-
-
         </div>
     )
 }
