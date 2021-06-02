@@ -3,7 +3,6 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const navbar = () => {
     return (
-        <>
         <Navbar collapseOnSelect sticky='top' expand='sm' bg='dark' variant='dark'>
             <Container>
                 <Navbar.Brand>Grant Cawley</Navbar.Brand>
@@ -17,7 +16,6 @@ const navbar = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-        </>
     
         );
 }
