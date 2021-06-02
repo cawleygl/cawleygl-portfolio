@@ -1,15 +1,13 @@
 // import React, { useEffect, useState } from 'react'
 // import { useAppContext } from '../../utils/AppContext'
 import "./style.css"
+import PageTitle from '../../components/PageTitle'
+
 
 const AboutPage = () => {
     return (
         <div className="container mt-sm-5 mt-4">
-            <div className="row p-2">
-                <div className="col-sm-10 ml-sm-4 border-bottom border-dark">
-                    <h1 className="font-weight-light">About Me</h1>
-                </div>
-            </div>
+            <PageTitle title="About Me" subtitle=""></PageTitle>
             <div className="row mt-3">
             <div className="col-sm-10 ml-sm-4">
                 <img src="Assets/ProfilePic.jpg" alt="Grant Cawley" height="200" width="200"
@@ -25,26 +23,23 @@ const AboutPage = () => {
         </div>
         <div className="row mt-2">
             <div className="col-sm-10 ml-sm-4">
-                <h4 className="font-weight-light">Linkedin: <a href="https://www.linkedin.com/in/grant-cawley-89249415b"
-                        target="_blank">Grant Cawley</a></h4>
+                <h4 className="font-weight-light">Linkedin: <a href="https://www.linkedin.com/in/grant-cawley-89249415b">Grant Cawley</a></h4>
             </div>
         </div>
         <div className="row">
             <div className="col-sm-10 ml-sm-4">
-                <h4 className="font-weight-light">GitHub: <a href="https://github.com/cawleygl" target="_blank">cawleygl</a>
+                <h4 className="font-weight-light">GitHub: <a href="https://github.com/cawleygl">cawleygl</a>
                 </h4>
             </div>
         </div>
         <div className="row">
             <div className="col-sm-10 ml-sm-4">
-                <h4 className="font-weight-light">Email: <a href="mailto:grantlcawley@gmail.com"
-                        target="_blank">grantlcawley@gmail.com</a></h4>
+                <h4 className="font-weight-light">Email: <a href="mailto:grantlcawley@gmail.com">grantlcawley@gmail.com</a></h4>
             </div>
         </div>
         <div className="row mb-5">
             <div className="col-sm-10 ml-sm-4">
-                <h4 className="font-weight-light">Resume: <a href="Assets/Grant Cawley - Resume.pdf" download
-                        target="_blank">Grant Cawley - Resume.pdf</a></h4>
+                <h4 className="font-weight-light">Resume: <a href="Assets/Grant Cawley - Resume.pdf" download>Grant Cawley - Resume.pdf</a></h4>
             </div>
         </div>
 

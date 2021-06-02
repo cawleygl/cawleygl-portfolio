@@ -1,15 +1,12 @@
 // import React, { useEffect, useState } from 'react'
 // import { useAppContext } from '../../utils/AppContext'
 import "./style.css"
+import PageTitle from '../../components/PageTitle'
 
 const ContactPage = () => {
     return (
         <div className="container mt-sm-5 mt-4">
-            <div className="row p-2">
-                <div className="col-sm-10 ml-sm-4 border-bottom border-dark">
-                    <h1 className="font-weight-light">Contact</h1>
-                </div>
-            </div>
+            <PageTitle title="Contact" subtitle=""></PageTitle>
             <div className="row mt-3">
                 <div className="col-sm-10 ml-sm-4">
                     <div className="form-group">
