@@ -5,9 +5,9 @@ import "./style.css"
 
 const pageTitle = (props) => {
     return (
-        <Jumbotron class="jumbotron">
+        <Jumbotron className="jumbotron">
             <Container>
-                <h1 class="title">{props.title}</h1>
+                <h1 className="title">{props.title}</h1>
                 <p>{props.subtitle}</p>
             </Container>
         </Jumbotron>
