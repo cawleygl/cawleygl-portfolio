@@ -25,7 +25,7 @@ const AboutPage = () => {
                             </ButtonGroup>
                         </Row>
                     </Col>
-                    <Col>
+                    <Col className="about">
                         <p>Grant Cawley is a student currently learning full stack software development through Washington
                         University Coding Boot Camp. He graduated from Saint Louis University in the Spring of 2018 with a
                         Bachelor of Science degree in Psychology, and Bachelor of Arts degree in Spanish Language and
