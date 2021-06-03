@@ -9,10 +9,8 @@ import Resume from '../../Assets/Grant Cawley - Resume.pdf'
 
 const AboutPage = () => {
     return (
-        <div className="container mt-sm-5 mt-4">
-
-            <PageTitle title="About Me" subtitle=""></PageTitle>
             <Container>
+            <PageTitle title="About Me" subtitle=""></PageTitle>
                 <Row>
                     <Col sm={7} md={5} lg={4} >
                         <Row>
@@ -38,7 +36,6 @@ const AboutPage = () => {
                     </Col>
                 </Row>
             </Container>
-        </div>
     )
 }
 
