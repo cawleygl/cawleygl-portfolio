@@ -9,7 +9,7 @@ import Resume from '../../Assets/Grant Cawley - Resume.pdf'
 const ContactPage = () => {
     return (
         <Container>
-            <PageTitle title="Contact" subtitle="Submit your contact info here or get in touch with me directly below"></PageTitle>
+            <PageTitle title="Contact" subtitle="Submit your contact info here or get in touch with me directly at the links below!"></PageTitle>
             <Row className="form">
                 <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.Name">
