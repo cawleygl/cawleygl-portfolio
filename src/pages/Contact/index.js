@@ -2,45 +2,46 @@
 // import { useAppContext } from '../../utils/AppContext'
 import "./style.css"
 import PageTitle from '../../components/PageTitle'
+import { Button, ButtonGroup, Container, Form, Row, } from "react-bootstrap"
+
+import Resume from '../../Assets/Grant Cawley - Resume.pdf'
 
 const ContactPage = () => {
     return (
-        <div className="container mt-sm-5 mt-4">
-            <PageTitle title="Contact" subtitle=""></PageTitle>
-            <div className="row mt-3">
-                <div className="col-sm-10 ml-sm-4">
-                    <div className="form-group">
-                        <label for="Name">Name</label>
-                        <input className="form-control" type="text" id="Name" placeholder="Name" />
-                    </div>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-sm-10 ml-sm-4">
-                    <div className="form-group">
-                        <label for="Email">Email Address</label>
-                        <input className="form-control" type="email" id="Email" placeholder="Email"
-                            aria-describedby="emailHelp" />
-                        <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone
-                        else.</small>
-                    </div>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-sm-10 ml-sm-4">
-                    <div className="form-group">
-                        <label for="Message">Message</label>
-                        <textarea className="form-control" id="Message" rows="3"></textarea>
-                    </div>
-                </div>
-            </div>
-            <div className="row mb-5">
-                <div className="col-sm-10 ml-sm-4">
-                    <button type="submit" className="btn btn-danger btn-lg pl-4 pr-4">Submit</button>
-                </div>
-            </div>
+        <Container>
+            <PageTitle title="Contact" subtitle="Submit your contact info here or get in touch with me directly below"></PageTitle>
+            <Row className="form">
+                <Form>
+                    <Form.Group className="mb-3" controlId="exampleForm.Name">
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control as="textarea" rows={1} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Text className="text-muted">
+                            We'll never share your email with anyone else.
+                    </Form.Text>
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.Message">
+                        <Form.Label>Message</Form.Label>
+                        <Form.Control as="textarea" rows={3} />
+                    </Form.Group>
+                    <Button variant="primary" type="submit">
+                        Submit
+                </Button>
+                </Form>
+            </Row>
+            <Row>
+                <ButtonGroup>
+                    <Button size="sm" href="https://www.linkedin.com/in/grant-cawley-89249415b" variant="danger">Linkedin</Button>
+                    <Button size="sm" href="https://github.com/cawleygl" variant="danger">GitHub</Button>
+                    <Button size="sm" href="mailto:grantlcawley@gmail.com" variant="danger">Email</Button>
+                    <Button size="sm" href={Resume} download variant="danger">Resume</Button>
+                </ButtonGroup>
 
-        </div>
+            </Row>
+        </Container>
     )
 }
 
