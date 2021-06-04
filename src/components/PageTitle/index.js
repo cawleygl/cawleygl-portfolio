@@ -8,7 +8,7 @@ const pageTitle = (props) => {
         <Jumbotron className="jumbotron">
             <Container>
                 <h1 className="title">{props.title}</h1>
-                <p>{props.subtitle}</p>
+                <p className="subtitle">{props.subtitle}</p>
             </Container>
         </Jumbotron>
 

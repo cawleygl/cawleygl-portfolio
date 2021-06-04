@@ -9,8 +9,8 @@ import Resume from '../../Assets/Grant Cawley - Resume.pdf'
 const ContactPage = () => {
     return (
         <Container>
-            <PageTitle title="Contact" subtitle="Submit your contact info here or get in touch with me directly at the links below!"></PageTitle>
-            <Row className="form">
+            <PageTitle title="Contact" subtitle="Get in touch with me through the links below!"></PageTitle>
+            {/* <Row className="form">
                 <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.Name">
                         <Form.Label>Name</Form.Label>
@@ -31,13 +31,13 @@ const ContactPage = () => {
                         Submit
                 </Button>
                 </Form>
-            </Row>
+            </Row> */}
             <Row>
-                <ButtonGroup>
-                    <Button size="sm" href="https://www.linkedin.com/in/grant-cawley-89249415b" variant="danger">Linkedin</Button>
-                    <Button size="sm" href="https://github.com/cawleygl" variant="danger">GitHub</Button>
-                    <Button size="sm" href="mailto:grantlcawley@gmail.com" variant="danger">Email</Button>
-                    <Button size="sm" href={Resume} download variant="danger">Resume</Button>
+                <ButtonGroup vertical>
+                    <Button size="lg" href="https://www.linkedin.com/in/grant-cawley-89249415b" variant="primary">Linkedin</Button>
+                    <Button size="lg" href="https://github.com/cawleygl" variant="danger">GitHub</Button>
+                    <Button size="lg" href="mailto:grantlcawley@gmail.com" variant="warning">Email</Button>
+                    <Button size="lg" href={Resume} download variant="success">Resume</Button>
                 </ButtonGroup>
 
             </Row>
